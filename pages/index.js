@@ -22,7 +22,7 @@ export default function Home({ products, bannerData }) {
 
         <div className="products-container">
           {products?.map((product) => (
-            <h1>{product.name}</h1>
+            <Product key={product._id} product={product} />
           ))}
         </div>
       </div>
